@@ -1,3 +1,42 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-inline-end: 0;
+}
+
+h3 {
+  color: orange;
+}
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+} 
+
+.footer-container ul li {
+  display: inline;
+  margin: 20px;
+  color: white;
+}
+.footer-container a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+=======
 html {
   height: 100%;
   width: 100%;
