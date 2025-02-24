@@ -48,6 +48,7 @@ h3 {
   width: 100%; 
 }
 
+
 .navbar-nav {
   display: flex;
   flex-direction: row;
@@ -153,4 +154,86 @@ textarea {
 
 .send-btn:hover {
   background: #4781ff;
+}
+
+/* Content section */
+.container-title {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-style: oblique;
+}
+
+#posts-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post {
+  border: 2px solid black;
+  border-radius: 3%;
+  margin-top: 10px;
+
+}
+
+.image {
+  border-radius: 3%;
+  width: 100%; 
+  height: 200px;
+  object-fit:cover;
+}
+
+.title {
+  margin: 0;
+  padding: 4px;
+}
+
+.post-body {
+  margin: 0;
+  padding: 4px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tags-container {
+  width: 50%;
+  display: flex;
+  justify-content:start;
+  height: fit-content;
+}
+
+.tag {
+  background-color: #ccc;
+  height: auto;
+  border-radius: 10%;
+  margin-left: 1rem;
+}
+
+.p-tag {
+  margin: 2px;
+  font:bold;
+}
+.reactions-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.like {
+  margin: 0;
+}
+
+.dislike {
+  margin: 0;
 }
