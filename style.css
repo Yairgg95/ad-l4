@@ -1,12 +1,9 @@
-
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-
-
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
 footer {
   background-color: #333;
@@ -25,7 +22,7 @@ h3 {
 .footer-container ul {
   list-style: none;
   padding: 0;
-} 
+}
 
 .footer-container ul li {
   display: inline;
@@ -36,7 +33,7 @@ h3 {
   color: #ffcc00;
   text-decoration: none;
 }
-=======
+
 html {
   height: 100%;
   width: 100%;
@@ -62,7 +59,8 @@ html {
 }
 
 .left-section {
-  background: url('https://images.pexels.com/photos/30832765/pexels-photo-30832765/free-photo-of-moody-seattle-cityscape-with-fog-and-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+  background: url("https://images.pexels.com/photos/30832765/pexels-photo-30832765/free-photo-of-moody-seattle-cityscape-with-fog-and-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
   color: white;
   width: 50%;
   padding: 30px;
@@ -79,7 +77,8 @@ html {
   font-weight: bold;
 }
 
-.phone, .email {
+.phone,
+.email {
   font-weight: bold;
 }
 
@@ -104,7 +103,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
