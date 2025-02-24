@@ -1,55 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Sobre Nosotros</title>
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #343a40; /* Fondo oscuro */
+            color: #fff; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+        }
 
+        .navbar-light .navbar-nav .nav-link {
+            color: #000; /* Color de los enlaces de la barra de navegación */
+        }
+
+        footer {
+            background-color: #f8f9fa; /* Fondo claro para el pie de página */
+            color: #000; /* Texto oscuro en el pie de página */
+        }
+
+        /* Estilo para la barra de navegación */
+        nav {
+            background-color: #007bff; /* Fondo azul para la barra de navegación */
+        }
+
+        .hero {
+            background-color: #555; /* Fondo oscuro para la sección hero */
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .section-title {
+            margin-top: 40px;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .content-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+            border-radius: 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+    </style>
+    <title>Proyecto 51</title>
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
-                </ul>
-            </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Proyecto 51</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
+    <!-- Sección Hero -->
+    <div class="hero">
+        <h1>Bienvenido a Proyecto 51</h1>
+    </div>
 
-
-
-
-    <footer>
-        <div class="footer-container">
-            <h3>Autores del Sitio Web</h3>
-            <ul>
-                <li>Frida</li>
-                <li>Yair</li>
-                <li>Joaquin</li>
-                <li>Luis Miguel</li>
-                <li>Jaqueline</li>
-                <li>Irving</li>
-                <li>Alexis</li>
-                <li>Alán</li>
-                <li>Enrique</li>
-            </ul>
-            <p class="nombre-pag"> MI PRIMER BLOG</p>
-            <p>Contacto: <a href="blog.contacto@ejemplo.com">blog.contacto@ejemplo.com</a></p>
-
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <!-- Misión -->
+        <div class="text-center content-section">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <p>Somos el equipo de Proyecto 51, una plataforma diseñada para ofrecer una red de apoyo, consejos prácticos y noticias relevantes a personas que buscan un cambio de carrera o superación personal. Este proyecto, impulsado por **Generación México**, tiene como objetivo ayudar a aquellos que desean tomar un nuevo rumbo profesional.</p>
         </div>
-    </footer>
-    <script src="./script.js"></script>
-</body>
 
+        <!-- Visión -->
+        <div class="text-center content-section">
+            <h2 class="section-title">Nuestra Visión</h2>
+            <p>Convertirnos en la principal plataforma de apoyo para quienes buscan reinventarse profesionalmente. A través de consejos útiles, noticias actuales y una comunidad de apoyo, ayudamos a que más personas den el siguiente paso en su carrera y logren sus objetivos personales y profesionales.</p>
+        </div>
+
+        <!-- Noticias y Artículos -->
+        <h2 class="text-center mb-4 section-title">Noticias y Artículos</h2>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h5>¿Cómo cambiar de carrera con éxito?</h5>
+                <p>Te ofrecemos algunos consejos clave sobre cómo hacer una transición efectiva en tu carrera profesional. Aprende a dar el siguiente paso con seguridad y preparación.</p>
+            </div>
+            <div class="col-md-12 mb-4">
+                <h5>Las mejores industrias para un cambio de carrera en 2025</h5>
+                <p>Explora las industrias más prometedoras y descubre por qué podrían ser la opción ideal para tu futuro profesional.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Proyecto 51. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
