@@ -1,39 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Sobre Nosotros</title>
-</head>
-<body>
-    <script src="./script.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Proyecto 51</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
-
-
+    <!-- Contenido Principal -->
+    <div class="container about-content d-flex flex-column">
+  
+        <!-- Misión -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="text-center content-section">
+              <h2 class="section-title">Nuestra Misión</h2>
+              <p>
+                Este sitio web es un ejemplo de un blog donde utilizamos la API de un
+                backend para realizar un fetch y obtener los posts de un blog. Nuestro
+                objetivo es proporcionar contenido relevante para aquellos interesados
+                en mejorar sus habilidades profesionales.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Visión -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="text-center content-section">
+              <h2 class="section-title">Nuestra Visión</h2>
+              <p>
+                Convertirnos en la plataforma que conecta personas a través de
+                contenido útil y relevante, proporcionando consejos y recursos que
+                faciliten su cambio de carrera.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Noticias y Artículos -->
+        <h2 class="text-center mb-4 section-title">Noticias y Artículos</h2>
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <h5>¿Cómo cambiar de carrera con éxito?</h5>
+            <p>
+              Te ofrecemos algunos consejos clave sobre cómo hacer una transición
+              efectiva en tu carrera profesional. Aprende a dar el siguiente paso
+              con seguridad y preparación.
+            </p>
+          </div>
+          <div class="col-md-12 mb-4">
+            <h5>Las mejores industrias para un cambio de carrera en 2025</h5>
+            <p>
+              Explora las industrias más prometedoras y descubre por qué podrían
+              ser la opción ideal para tu futuro profesional.
+            </p>
+          </div>
+        </div>
+      
+      </div>
 
     <footer>
-        <div class="footer-container">
-            <h3>Autores del Sitio Web</h3>
-            <ul>
-                <li>Frida</li>
-                <li>Yair</li>
-                <li>Joaquin</li>
-                <li>Luis Miguel</li>
-                <li>Jaqueline</li>
-                <li>Irving</li>
-                <li>Alexis</li>
-                <li>Alán</li>
-                <li>Enrique</li>
-            </ul>
-            <p class="nombre-pag"> MI PRIMER BLOG</p> 
-            <p>Contacto: <a href="blog.contacto@ejemplo.com">blog.contacto@ejemplo.com</a></p>
-            <div class="copyright">
-                <p>Copyright 2025. All Rights Reserved</p>
-            </div>
-        </div>
+      <div class="footer-container">
+        <h3>Autores del Sitio Web</h3>
+        <ul>
+          <li>Frida</li>
+          <li>Yair</li>
+          <li>Joaquin</li>
+          <li>Luis Miguel</li>
+          <li>Jaqueline</li>
+          <li>Irving</li>
+          <li>Alexis</li>
+          <li>Alán</li>
+          <li>Enrique</li>
+        </ul>
+        <p class="nombre-pag">MI PRIMER BLOG</p>
+        <p>
+          Contacto:
+          <a href="blog.contacto@ejemplo.com">blog.contacto@ejemplo.com</a>
+        </p>
+        <p>Copyright 2025. All Rights Reserved</p>
+      </div>
     </footer>
 
-</body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
