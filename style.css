@@ -5,11 +5,14 @@ body {
   width: 100%;
 }
 
+/* FOOTER SECTION */
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 0;
+  /*Revisar si es conviente dejarlo fijado -Joaquin*/
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -19,6 +22,7 @@ footer {
 h3 {
   color: orange;
 }
+
 .footer-container ul {
   list-style: none;
   padding: 0;
@@ -29,15 +33,39 @@ h3 {
   margin: 20px;
   color: white;
 }
+
 .footer-container a {
   color: #ffcc00;
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-  width: 100%;
+/* NAV BAR SECTION */
+
+.navbar {
+  display: block;
+  justify-content: normal;
+  align-items: normal;
+  width: 100%; 
 }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 10px; 
+}
+
+.nav-link {
+  color: white; 
+  text-decoration: none;
+}
+
+/* CONTACT US SECTION */
 
 #specific-body {
   font-family: Arial, sans-serif;
