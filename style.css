@@ -249,3 +249,8 @@ textarea {
 .about-content {
   margin-top: 4rem;
 }
+
+/* About Us */
+element.style {
+  width: 650px;
+}
