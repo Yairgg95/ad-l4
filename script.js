@@ -20,66 +20,72 @@ async function getPosts() {
 
 function displayPosts(posts) {
   const container = document.getElementById("posts-container");
+  container.className = " d-flex flex-column gap-4 container"; 
 
   posts.forEach((post) => {
+   
     const postDiv = document.createElement("div");
-    postDiv.className = "post";
+    postDiv.className = "card mb-4 p-1 shadow-lg";
 
     const img = document.createElement("img");
-    img.className = "image";
+    img.className = "card-img-top rounded img-custom";
     img.src = `https://api.dicebear.com/9.x/shapes/svg?seed=${post.title}`;
     img.alt = post.title;
 
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body bg-ligth";
+
+
     const h2 = document.createElement("h2");
     h2.textContent = post.title;
-    h2.classList.add("title");
+    h2.className = "card-title";
 
+   
     const p = document.createElement("p");
     p.textContent = post.body;
-    p.classList.add("post-body");
+    p.className = "card-text";
 
     const postMeta = document.createElement("div");
-    postMeta.classList.add("post-meta");
+    postMeta.className = "d-flex justify-content-between align-items-center mt-3";
+
 
     const tagsContainer = document.createElement("div");
-    tagsContainer.classList.add("tags-container");
+    tagsContainer.className = "d-flex flex-wrap";
 
     post.tags.forEach((tag) => {
-      const div = document.createElement("div");
-      div.classList.add("tag");
-      const p = document.createElement("p");
-      p.innerText = `#${tag}`;
-      p.classList.add("p-tag");
-
-      div.appendChild(p);
-      tagsContainer.appendChild(div);
+      const span = document.createElement("span");
+      span.className = "badge bg-primary me-2"; 
+      span.textContent = `#${tag}`;
+      tagsContainer.appendChild(span);
     });
 
     const reactionsContainer = document.createElement("div");
-    reactionsContainer.classList.add("reactions-container");
+    reactionsContainer.className = "d-flex gap-3";
 
-    const pLike = document.createElement("p");
-    pLike.classList.add("like");
-    pLike.innerText = `👍🏼 ${post.reactions.likes}`;
+    const pLike = document.createElement("span");
+    pLike.className = "text-success fw-bold";
+    pLike.innerHTML = `👍🏼 ${post.reactions.likes}`;
 
-    const pDislike = document.createElement("p");
-    pDislike.classList.add("dislike");
-    pDislike.innerText = `👎🏼 ${post.reactions.dislikes}`;
+    const pDislike = document.createElement("span");
+    pDislike.className = "text-danger fw-bold";
+    pDislike.innerHTML = `👎🏼 ${post.reactions.dislikes}`;
 
     reactionsContainer.appendChild(pLike);
     reactionsContainer.appendChild(pDislike);
 
-    postDiv.appendChild(img);
-    postDiv.appendChild(h2);
-    postDiv.appendChild(p);
-    postDiv.appendChild(postMeta);
+ 
+    cardBody.appendChild(h2);
+    cardBody.appendChild(p);
+    cardBody.appendChild(postMeta);
     postMeta.appendChild(tagsContainer);
-    postMeta.appendChild(reactionsContainer)
-    
+    postMeta.appendChild(reactionsContainer);
 
+    postDiv.appendChild(img);
+    postDiv.appendChild(cardBody);
     container.appendChild(postDiv);
   });
 }
+
 
 getPosts()
   .then(displayPosts)
