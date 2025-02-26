@@ -91,5 +91,3 @@ getPosts()
   .then(displayPosts)
   .catch((error) => console.error("Error:", error));
 
-
-
