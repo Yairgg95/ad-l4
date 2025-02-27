@@ -38,11 +38,29 @@
         </div>
       </div>
     </nav>
-    <main>
-      <div class="container-title">
-        <h1 class="page-title">Welcome to our Blog</h1>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+
+        <aside class="col-md-3 d-none d-sm-block bg-light p-3 aside-left">
+          <h2>Post populares</h2>
+          <ul class="list-unstyled d-flex flex-column"></ul>
+        </aside>
+    
+        <section class="col-md-6 col-sm-12">
+          <div class="container-title text-center p-3">
+            <h1 class="page-title">Welcome to our Blog</h1>
+          </div>
+          <div id="posts-container"></div>
+        </section>
+    
+        <aside class="col-md-3 d-none d-md-block bg-light p-3 aside-right">
+          <h2>Quotes</h2>
+          <ul class="list-unstyled">
+          </ul>
+        </aside>
+
       </div>
-      <div id="posts-container"></div>
     </main>
 
     <footer>
